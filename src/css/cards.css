@@ -1,0 +1,47 @@
+.cards_main {
+  margin-top: 6rem;
+  > h3 > span {
+    color: #e51a4b;
+  }
+  > h6 > span {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #e51a4b;
+    }
+  }
+}
+.card {
+  height: 340px !important;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0) !important;
+  border-radius: 0% !important;
+  > .head {
+    > h6 {
+      cursor: pointer;
+      color: #e51a4b;
+      width: fit-content;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        padding: 3px 7px;
+        color: #fff;
+        border-radius: 3px;
+        background-color: #e51a4b;
+      }
+    }
+  }
+  > button {
+    background-color: #060436;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #e51a4b;
+    }
+  }
+}

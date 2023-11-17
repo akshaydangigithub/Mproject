@@ -1,0 +1,217 @@
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  > .logo {
+    > img {
+      height: 60px;
+    }
+  }
+}
+
+.enroll_btn {
+  > button {
+    background-color: #060436;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  > .safe {
+    position: relative;
+    > .safe_drop {
+      background-color: #e7e7e7;
+      position: absolute;
+      width: 300px;
+      height: auto;
+      left: 0%;
+      top: 100%;
+      overflow: hidden;
+      scale: 0;
+      > .drop_links {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+      }
+    }
+  }
+  > .scrum {
+    position: relative;
+    > .scrum_drop {
+      background-color: #e7e7e7;
+      position: absolute;
+      width: 300px;
+      height: auto;
+      left: 0%;
+      top: 100%;
+      overflow: hidden;
+      scale: 0;
+      > .drop_links {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+      }
+    }
+  }
+  > .workshop {
+    position: relative;
+    > .workshop_drop {
+      background-color: #e7e7e7;
+      position: absolute;
+      width: 170px;
+      height: auto;
+      left: 0%;
+      top: 100%;
+      overflow: hidden;
+      scale: 0;
+      > .drop_links {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+      }
+    }
+  }
+  > .courses {
+    position: relative;
+    > .courses_drop {
+      background-color: #e7e7e7;
+      position: absolute;
+      width: 170px;
+      height: auto;
+      left: 0%;
+      top: 100%;
+      overflow: hidden;
+      scale: 0;
+      > .drop_links {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+      }
+    }
+  }
+  > .dropdown {
+    position: relative;
+    > .dropdown_drop {
+      background-color: #e7e7e7;
+      position: absolute;
+      width: 100px;
+      height: auto;
+      left: 0%;
+      top: 100%;
+      overflow: hidden;
+      scale: 0;
+      > .drop_links {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+      }
+    }
+  }
+  > .other_courses {
+    position: relative;
+    > .other_courses_drop {
+      background-color: #e7e7e7;
+      position: absolute;
+      width: 170px;
+      height: auto;
+      left: 0%;
+      top: 100%;
+      overflow: hidden;
+      scale: 0;
+      > .drop_links {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+      }
+    }
+  }
+  > .more {
+    position: relative;
+    > .more_drop {
+      background-color: #e7e7e7;
+      position: absolute;
+      width: 170px;
+      height: auto;
+      left: 0%;
+      top: 150%;
+      overflow: hidden;
+      scale: 0;
+      > .drop_links {
+        cursor: pointer;
+        position: relative;
+        width: fit-content;
+      }
+    }
+  }
+  > .dropdown {
+    > button {
+      padding: 3px 20px;
+      border: 2px solid gray;
+      background-color: white;
+      outline: none;
+      cursor: pointer;
+    }
+    > .beg {
+      color: #264263;
+    }
+  }
+}
+
+.logo2 {
+  > img {
+    height: 60px;
+  }
+}
+a {
+  font-weight: 500;
+}
+.safe:hover .safe_drop,
+.scrum:hover .scrum_drop,
+.workshop:hover .workshop_drop,
+.courses:hover .courses_drop,
+.other_courses:hover .other_courses_drop,
+.more:hover .more_drop {
+  scale: 1;
+  transition: all 0.5s ease;
+}
+
+.dropdown:hover .dropdown_drop {
+  scale: 1;
+  transition: all 0.5s ease;
+}
+.down_icon {
+  transition: all 0.5s ease;
+}
+.dropdown:hover .down_icon {
+  transform: rotate(180deg);
+}
+
+.drop_links::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: -10%;
+  left: 0%;
+  background-color: #e41848;
+  transition: all 0.5s ease;
+}
+.drop_links:hover::after {
+  width: 100%;
+}
+.enroll_btn button:hover{
+    transition: all 0.5s ease;
+   scale: .9;
+   background-color: #060436bc;
+}
