@@ -5,6 +5,10 @@ import Clients from "../components/Clients";
 import Cards from "../components/Cards";
 import Score from "../components/Score";
 import Footer from "../components/Footer";
+import WhyChoose from "../components/WhyChoose";
+import ThreeCard from "../components/ThreeCard";
+import Blogs from "../components/Blogs";
+import SocialMedia from "../components/SocialMedia";
 
 const Homepage = () => {
   return (
@@ -12,9 +16,13 @@ const Homepage = () => {
       <Navbar />
       <Hero />
       <Clients />
-      <Cards/>
+      <Cards />
       <Score />
-      <Footer/>
+      <WhyChoose />
+      <ThreeCard />
+      <Blogs />
+      <SocialMedia />
+      <Footer />
     </>
   );
 };
