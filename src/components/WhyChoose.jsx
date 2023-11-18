@@ -3,7 +3,7 @@ import sideimg from "../assets/bannerside.png";
 const WhyChoose = () => {
   return (
     <>
-      <div className="container-fluid mt-5 mx-5">
+      <div  className="container mt-5 mx-4">
         <div className="row">
           <div className="col-6">
             <h2>Why Choose Advance Agility?</h2>
